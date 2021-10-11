@@ -29,6 +29,12 @@ a{
     background: lightgrey;
     border: 0.0000001px dotted white;
     height: 10%;
+    align-items: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #menuBtn{
@@ -37,14 +43,7 @@ a{
 #dropup{
     display: none;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    
-}
-nav h1{
+.header h1{
     margin: 0px 10px;
     font-size: 3rem;
 }
@@ -119,8 +118,8 @@ main{
     font-family: 'Kanit', sans-serif;
     border: 1px dashed greenyellow;
     overflow-y: auto;
-
 }
+
 #rightSide{
     border: 1px dashed greenyellow;
     min-height: 100%;
@@ -129,7 +128,7 @@ main{
 }
 footer{
     background: gray;
-    height: 5rem;
+    height: 10%;
     width: 100%;
 }
 
@@ -160,12 +159,10 @@ footer{
         overflow-y: auto;
     }
     .sidebarItems{
-        margin: 10px 0px; */
+        margin: 10px 0px;
         padding: 10px 50px;
     }
-    nav{
-    justify-content: space-between;
-    }
+  
     .rightSide{
         display: none;
     }

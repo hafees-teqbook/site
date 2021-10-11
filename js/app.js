@@ -1,17 +1,10 @@
 
-
-
-
-
-
-
-
 const contentRightArrow = document.getElementById("contentsRight");
 const contentQuery = document.querySelector(".sidebarFirst");
 
 const sidebarList = document.getElementById("sidebarList");
 const sidebarListStyle = getComputedStyle(sidebarList);
-
+// content listing
 const contentDown = () => {
     if (sidebarListStyle.display == 'none') {
         contentRightArrow.src = "images/downarrow.png";
