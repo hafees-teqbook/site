@@ -26,13 +26,17 @@ const menuBtnId = document.getElementById("menuBtn");
 const sidebar = document.getElementById("sidebar");
 const sidebarStyle = getComputedStyle(sidebar);
 
+const menuIcon=document.getElementById("menuIcon");
+
 const menuHandler = () => {
     if (sidebarStyle.visibility=='hidden') {
         sidebar.style.visibility='visible';
         sidebar.style.display='flex';
+        menuIcon.src="images/close.png";
     } else {
         sidebar.style.visibility='hidden';
         sidebar.style.display='none';
+        menuIcon.src="images/iconmenu.png";
     }
 }
 menuBtn.addEventListener('click', menuHandler);

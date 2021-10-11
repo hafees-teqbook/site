@@ -26,8 +26,8 @@ a{
     width: 100%;
     position: sticky;
     top: 0;
-    background: lightgrey;
-    border: 0.0000001px dotted white;
+    background: white;
+    border: 0.0000001px dotted greenyellow;
     height: 10%;
     align-items: center;
 
@@ -127,7 +127,7 @@ main{
     overflow-y: auto;
 }
 footer{
-    background: gray;
+    background: white;
     height: 10%;
     width: 100%;
 }
@@ -136,9 +136,12 @@ footer{
 @media screen and (max-width:997px){
     #menuBtn{
         display: flex;
-        margin: 0px 5px;
+        margin: 0px 10px;
     }
-    
+    #menuIcon{
+        width: 24px;
+        height: 24px;
+    }
     #mainContent{
         padding: 10px 10px;
         width: 100%;
@@ -151,7 +154,7 @@ footer{
         display:none;
         font-size: 15px;
         min-width: 72%;
-        background: lightgrey;
+        background: white;
     }
     #sidebarSecond{
         width: 100%;
