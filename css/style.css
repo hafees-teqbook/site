@@ -1,3 +1,10 @@
+:root{
+    --text-color: black;
+    --border: 1px solid #dadce0;
+    --box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+    --footer-background : #f8f9fa;
+    --background-color : #f8f9fa;
+}
 *{
     margin: 0;
     padding: 0;
@@ -14,23 +21,24 @@ body{
     flex-wrap: wrap;
     width: 100%;
     min-height: 100vh;
+    background: var(--background-color);
 }
 .container{
     height: 100vh;
 }
 a{
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
 }
 #header{
     width: 100%;
     position: sticky;
     top: 0;
-    background: white;
-    border: 0.0000001px dotted greenyellow;
+    border-bottom: var(--border);
+    background-color: var(--background-color);
     height: 10%;
     align-items: center;
-
+    color: var(--text-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,6 +47,14 @@ a{
 
 #menuBtn{
     display: none;
+}
+#themeIcon{
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+}
+#themeIcon:hover{
+    cursor: pointer;
 }
 #dropup{
     display: none;
@@ -60,8 +76,9 @@ main{
     height: 100%;
     width: 18%;
     font-size: 20px;
-    border: 1px dashed greenyellow;
-
+    color: var(--text-color);
+    border-right: var(--border);
+    
 }
 .sidebarFirst{
     height: 10%;
@@ -69,11 +86,10 @@ main{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px dotted greenyellow;
+    border-bottom: var(--border);
 }
 .sidebarFirst:hover{
     cursor: pointer;
-    background-color: white;
     border-radius: 2px;
     transition: 1s;
 }
@@ -91,9 +107,13 @@ main{
     justify-content: space-around;
     
 }
+#sidebarList li{
+    margin: 20px 0px;
+
+}
 .sidebarItems{
-    margin: 10px 0px;
     padding: 10px 80px;
+
 }
 .sidebarItems:hover{
     cursor: pointer;
@@ -116,20 +136,22 @@ main{
     width: 52%;
     padding: 20px 50px;
     font-family: 'Kanit', sans-serif;
-    border: 1px dashed greenyellow;
     overflow-y: auto;
+    color: var(--text-color);
 }
 
 #rightSide{
-    border: 1px dashed greenyellow;
     min-height: 100%;
     width: 30%;
     overflow-y: auto;
+    color: var(--text-color);
 }
 footer{
-    background: white;
+    background: var(--footer-background);
     height: 10%;
     width: 100%;
+    color: var(--text-color);
+    border-top: var(--border);
 }
 .footerTop{
     height: 70%;
@@ -153,6 +175,10 @@ footer{
 }
 
 @media screen and (max-width:997px){
+    #header{
+        justify-content: center;
+        gap: 10%;
+    }
     #menuBtn{
         display: flex;
         margin: 0px 10px;
@@ -173,7 +199,7 @@ footer{
         display:none;
         font-size: 15px;
         min-width: 72%;
-        background: white;
+        background: var(--background-color);
     }
     #sidebarSecond{
         width: 100%;
