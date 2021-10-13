@@ -37,7 +37,7 @@ const themeChange = () => {
                 }
             } else {
                 menuIcon.src = "images/menubright.png";
-
+                contentRightArrow.src = "images/rightarrowbright.png";
             }
             currentColor = 'black';
 
@@ -57,6 +57,7 @@ const themeChange = () => {
                 }
             } else {
                 menuIcon.src = "images/iconmenu.png";
+                contentRightArrow.src="images/rightarrow.png";
             }
             currentColor = 'white';
         }
