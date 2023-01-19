@@ -10,7 +10,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+p{
+    font-size: large;
+}
 html{
     max-width: 100%;
     scroll-behavior: smooth;
@@ -174,6 +176,9 @@ footer{
 }
 
 @media screen and (max-width:997px){
+    #logo{
+        font-size: xx-large;
+    }
     #header{
         justify-content: space-around;
     }
